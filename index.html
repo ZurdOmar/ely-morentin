@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ely Morentin - Asesora de Seguros experta en Vida, Gastos Médicos y Ahorro. Protege tu futuro y el de tu familia.">
+    <title>Ely Morentin | Asesora de Seguros y Patrimonio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons (Phosphor Icons for a clean look or FontAwesome) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo_ely_final.png" alt="Ely Morentin - Asesor de Seguros"
+                    class="logo-img animated-logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="ph ph-list"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#gastos-medicos">Gastos Médicos</a></li>
+                <li><a href="#educacion">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" class="btn-nav">Agendar Asesoría</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Asesora de Seguros & Patrimonio</span>
+                <h1>Tu tranquilidad,<br> <em>mi compromiso</em>.</h1>
+                <p>Especialista en Seguros de Vida, Gastos Médicos Mayores y Estrategias de Ahorro. Protege lo que más
+                    amas sin sacrificar tu estilo de vida.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="#servicios" class="btn btn-outline">Conocer Servicios</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- User provided photo will go here -->
+                <div class="image-placeholder">
+                    <img src="./assets/ely-hero.png" alt="Ely Morentin Asesora Profesional" id="hero-img">
+                </div>
+                <div class="floating-card maternity-card">
+                    <div class="icon-box"><i class="ph ph-baby"></i></div>
+                    <div class="text-box">
+                        <strong>Maternidad</strong>
+                        <span>Apoyo de hasta $42,500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Soluciones a tu Medida</h2>
+                <div class="divider"></div>
+                <p>Estrategias personalizadas para cada etapa de tu vida.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Life Insurance -->
+                <article class="service-card">
+                    <div class="service-icon"><i class="ph ph-shield-check"></i></div>
+                    <h3>Seguro de Vida</h3>
+                    <p>Garantiza el bienestar económico de tus seres queridos. Un acto de amor que trasciende.</p>
+                    <a href="#contacto" class="link-arrow">Más detalles <i class="ph ph-arrow-right"></i></a>
+                </article>
+
+                <!-- Medical Expenses -->
+                <article class="service-card featured">
+                    <div class="service-icon"><i class="ph ph-heartbeat"></i></div>
+                    <h3>Gastos Médicos</h3>
+                    <p>Acceso a la mejor atención privada sin descapitalizarte. Incluye beneficios de maternidad.</p>
+                    <a href="#gastos-medicos" class="link-arrow">Ver comparativa <i class="ph ph-arrow-right"></i></a>
+                </article>
+
+                <!-- Savings -->
+                <article class="service-card">
+                    <div class="service-icon"><i class="ph ph-piggy-bank"></i></div>
+                    <h3>Ahorro y Retiro</h3>
+                    <p>Construye tu patrimonio y asegura un retiro digno con rendimientos garantizados.</p>
+                    <a href="#contacto" class="link-arrow">Empezar a ahorrar <i class="ph ph-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparative Section (The "Hook") -->
+    <section id="gastos-medicos" class="comparison section-padding bg-cream">
+        <div class="container">
+            <div class="comparison-layout">
+                <div class="comparison-text">
+                    <h2>¿Sabes cuánto cuesta enfermarse?</h2>
+                    <p class="lead">"Una apendicitis podría costarte lo mismo que unas vacaciones en Europa... pero sin
+                        fotos felices."</p>
+                    <p>Atenderte en un hospital privado puede costarte en <strong>una sola noche</strong> cerca de:</p>
+
+                    <div class="cost-display">
+                        <span class="currency">$</span>
+                        <span class="amount" id="counter">220,295</span>
+                        <span class="currency">MXN</span>
+                    </div>
+
+                    <ul class="cost-breakdown-list">
+                        <li><i class="ph ph-check-circle"></i> Honorarios médicos</li>
+                        <li><i class="ph ph-check-circle"></i> Quirófano y hospitalización</li>
+                        <li><i class="ph ph-check-circle"></i> Medicamentos y equipo</li>
+                    </ul>
+
+                    <a href="#contacto" class="btn btn-secondary">Evita este riesgo hoy</a>
+                </div>
+
+                <div class="comparison-visual">
+                    <!-- Interactive Table or Chart Representation -->
+                    <div class="cost-table-card">
+                        <div class="table-header">Costos Reales (Ejemplo)</div>
+                        <div class="table-row">
+                            <span>Honorarios médicos</span>
+                            <strong>$50,010</strong>
+                        </div>
+                        <div class="table-row">
+                            <span>Quirófano</span>
+                            <strong>$11,332</strong>
+                        </div>
+                        <div class="table-row">
+                            <span>Habitación (1 noche)</span>
+                            <strong>$17,226</strong>
+                        </div>
+                        <div class="table-row">
+                            <span>Medicamento y equipo</span>
+                            <strong>$75,292</strong>
+                        </div>
+                        <div class="table-row highlight">
+                            <span>Total Aproximado</span>
+                            <strong>$220,295</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education / FAQ Section -->
+    <section id="educacion" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Academia de Seguros</h2>
+                <div class="divider"></div>
+                <p>Respondo las dudas más comunes de mis clientes.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Por qué incrementa el costo de mi póliza?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El costo se ajusta anualmente debido a factores como la inflación médica (que suele ser mayor
+                            a la inflación general), tu edad y el historial de siniestralidad general. Mi trabajo es
+                            ayudarte a encontrar el equilibrio para que siga siendo una inversión sostenible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué necesito asegurar primero: Vida o Gastos Médicos?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Depende de tu etapa de vida. Si tienes dependientes económicos, el Seguro de Vida es
+                            prioridad. Si eres soltero/a o buscas proteger tus ahorros ante una emergencia de salud,
+                            Gastos Médicos es el primer paso ideal.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cómo funciona el apoyo de maternidad?
+                        <i class="ph ph-caret-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Al contratar tu póliza y cumplir los periodos de espera, recibes un apoyo económico (aprox.
+                            $42,500) para libre uso durante el parto o cesárea, ayudándote a recibir a tu bebé con
+                            tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact section-padding bg-dark">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Agenda tu Asesoría Gratuita</h2>
+                <p>Analicemos juntos tu situación actual y diseñemos un plan a tu medida.</p>
+                <div class="contact-methods">
+                    <a href="https://wa.me/NUMERO" class="contact-link"><i class="ph ph-whatsapp-logo"></i> Enviar
+                        WhatsApp</a>
+                    <a href="mailto:contacto@elymorentin.com" class="contact-link"><i class="ph ph-envelope"></i> Enviar
+                        Correo</a>
+                    <a href="https://instagram.com/ely_morentin" class="contact-link"><i
+                            class="ph ph-instagram-logo"></i> @ely_morentin</a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Me interesa:</label>
+                        <select id="interest">
+                            <option value="sgmm">Gastos Médicos Mayores</option>
+                            <option value="vida">Seguro de Vida</option>
+                            <option value="ahorro">Ahorro / Retiro</option>
+                            <option value="otro">Otro / Duda General</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono / WhatsApp</label>
+                        <input type="tel" id="phone" placeholder="10 dígitos" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Solicitar Información</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Ely Morentin. Todos los derechos reservados.</p>
+            <p class="agent-disclaimer">Agente de Seguros Certificada.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
