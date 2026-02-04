@@ -571,6 +571,86 @@ ul {
     transform: rotate(180deg);
 }
 
+/* Scheduling / Calendly Section */
+.scheduling {
+    background: linear-gradient(135deg, var(--cream-bg) 0%, #FFFFFF 100%);
+}
+
+.calendly-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.calendly-inline-widget {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+}
+
+/* Placeholder Card (se muestra antes de configurar Calendly) */
+.calendly-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.placeholder-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+    max-width: 500px;
+}
+
+.placeholder-card i {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.placeholder-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.placeholder-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.placeholder-card .btn {
+    margin-top: 1.5rem;
+}
+
+/* Calendly Button Wrapper (si se usa el popup) */
+.calendly-button-wrapper {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.btn-large {
+    font-size: 1.2rem;
+    padding: 1.2rem 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.btn-large i {
+    font-size: 1.5rem;
+}
+
+/* Ocultar el placeholder cuando Calendly esté activo */
+.calendly-inline-widget:not(:empty) ~ .calendly-placeholder {
+    display: none;
+}
+
 /* Contact */
 .contact-container {
     display: grid;
