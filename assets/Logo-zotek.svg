@@ -1,0 +1,30 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      fill: #004080; /* Azul rey */
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .dot {
+      fill: #ff0066; /* Rosa neón para contraste */
+    }
+  </style>
+
+  <!-- Texto -->
+  <text x="0" y="60" class="text">ZOtek</text>
+  <text x="120" y="60" class="text" fill="#004080">Soluciones</text> <!-- Cambio aquí -->
+
+  <!-- Icono IA / Chip tecnológico -->
+  <g transform="translate(370, 25)">
+    <circle r="10" cx="0" cy="0" class="dot"/>
+    <circle r="3" cx="-12" cy="-12" class="dot" fill-opacity="0.6"/>
+    <circle r="3" cx="12" cy="-12" class="dot" fill-opacity="0.6"/>
+    <circle r="3" cx="-12" cy="12" class="dot" fill-opacity="0.6"/>
+    <circle r="3" cx="12" cy="12" class="dot" fill-opacity="0.6"/>
+    <line x1="-12" y1="-12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="12" y1="-12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="-12" y1="12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+    <line x1="12" y1="12" x2="0" y2="0" stroke="#004080" stroke-width="1"/>
+  </g>
+</svg>
