@@ -28,8 +28,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="./assets/logo-ely-nuevo.png" alt="Ely Morentin - Asesor de Seguros"
-                    class="logo-img animated-logo">
+                <img src="assets/logo-ely.jpg" alt="Ely Morentin - Asesor de Seguros" class="logo-img animated-logo">
             </a>
             <button class="mobile-menu-btn" aria-label="Abrir menú">
                 <i class="ph ph-list"></i>
@@ -235,9 +234,7 @@
                 -->
 
                 <!-- Opción A: Widget Inline (Recomendado - se ve dentro de la página) -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/morentinomar/30min"
-                    style="min-width:320px;height:700px;">
-                </div>
+                <div id="calendly-widget" style="min-width:320px;height:700px;"></div>
 
                 <!-- Opción B: Botón Popup (Alternativa - abre en modal)
                 <div class="calendly-button-wrapper">
@@ -320,9 +317,24 @@
 
     <script src="script.js"></script>
 
-    <!-- Calendly Widget Script - Descomenta cuando configures Calendly -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> -->
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script>
+        window.addEventListener('load', function () {
+            if (window.Calendly) {
+                Calendly.initInlineWidget({
+                    url: 'https://calendly.com/morentinomar/30min?locale=es',
+                    parentElement: document.getElementById('calendly-widget'),
+                    prefill: {},
+                    utm: {},
+                    text_color: '#0B3D33',
+                    primary_color: '#C5A065',
+                    locale: 'es',
+                    embed_locale: 'es'
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

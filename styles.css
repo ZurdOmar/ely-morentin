@@ -160,7 +160,7 @@ ul {
 
 /* Logo Responsive Styles */
 .logo-img {
-    height: 65px;
+    height: 80px;
     /* Desktop default */
     width: auto;
     transition: transform 0.3s ease;
@@ -192,7 +192,7 @@ ul {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .logo-img {
-        height: 50px;
+        height: 60px;
     }
 }
 

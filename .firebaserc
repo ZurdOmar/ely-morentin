@@ -1,5 +1,7 @@
 {
-  "projects": {},
+  "projects": {
+    "default": "ely-morentin-seguros"
+  },
   "targets": {},
   "etags": {}
 }
