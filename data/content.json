@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "subtitle": "Asesora de Seguros & Patrimonio",
+    "title_line1": "Tu tranquilidad,",
+    "title_line2": "mi compromiso.",
+    "description": "Especialista en Seguros de Vida, Gastos Médicos Mayores y Estrategias de Ahorro. Protege lo que más amas sin sacrificar tu estilo de vida.",
+    "btn_primary_text": "Agendar Asesoría",
+    "btn_outline_text": "Conocer Servicios"
+  },
+  "services": {
+    "title": "Soluciones a tu Medida",
+    "subtitle": "Estrategias personalizadas para cada etapa de tu vida.",
+    "cards": [
+      {
+        "title": "Seguro de Vida",
+        "description": "Garantiza el bienestar económico de tus seres queridos. Un acto de amor que trasciende.",
+        "link_text": "Más detalles"
+      },
+      {
+        "title": "Gastos Médicos",
+        "description": "Acceso a la mejor atención privada sin descapitalizarte. Incluye beneficios de maternidad.",
+        "link_text": "Ver comparativa"
+      },
+      {
+        "title": "Ahorro y Retiro",
+        "description": "Construye tu patrimonio y asegura un retiro digno con rendimientos garantizados.",
+        "link_text": "Empezar a ahorrar"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "¿Sabes cuánto cuesta enfermarse?",
+    "lead": "\"Una apendicitis podría costarte lo mismo que unas vacaciones en Europa... pero sin fotos felices.\"",
+    "explanation": "Atenderte en un hospital privado puede costarte en una sola noche cerca de:",
+    "counter_amount": "220,295"
+  },
+  "faq": {
+    "title": "Academia de Seguros",
+    "items": [
+      {
+        "question": "¿Por qué incrementa el costo de mi póliza?",
+        "answer": "El costo se ajusta anualmente debido a factores como la inflación médica (que suele ser mayor a la inflación general), tu edad y el historial de siniestralidad general. Mi trabajo es ayudarte a encontrar el equilibrio para que siga siendo una inversión sostenible."
+      },
+      {
+        "question": "¿Qué necesito asegurar primero: Vida o Gastos Médicos?",
+        "answer": "Depende de tu etapa de vida. Si tienes dependientes económicos, el Seguro de Vida es prioridad. Si eres soltero/a o buscas proteger tus ahorros ante una emergencia de salud, Gastos Médicos es el primer paso ideal."
+      },
+      {
+        "question": "¿Cómo funciona el apoyo de maternidad?",
+        "answer": "Al contratar tu póliza y cumplir los periodos de espera, recibes un apoyo económico (aprox. $42,500) para libre uso durante el parto o cesárea, ayudándote a recibir a tu bebé con tranquilidad."
+      }
+    ]
+  },
+  "footer": {
+    "contact_title": "Agenda tu Asesoría Gratuita",
+    "contact_desc": "Analicemos juntos tu situación actual y diseñemos un plan a tu medida.",
+    "copyright": "© 2026 Ely Morentin. Todos los derechos reservados."
+  }
+}

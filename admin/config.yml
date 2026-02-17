@@ -15,8 +15,8 @@ collections:
     files:
       - name: "home"
         label: "Página de Inicio"
-        file: "index.html"
-        format: "html"
+        file: "data/content.json"
+        format: "json"
         fields:
           - label: "Sección Hero"
             name: "hero"
