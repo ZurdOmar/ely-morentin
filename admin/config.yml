@@ -10,16 +10,64 @@ media_folder: "assets" # Donde se guardarán las imágenes
 public_folder: "assets"
 
 collections:
-  - name: "pages"
-    label: "Páginas"
+  - name: "content"
+    label: "Contenido del Sitio"
     files:
       - name: "home"
         label: "Página de Inicio"
         file: "index.html"
-        format: "html" # Decap puede intentar parsear HTML simple si se configura bien,
-                       # pero lo ideal es usar datos JSON. 
-                       # Por ahora, configuraremos campos básicos para referencia.
+        format: "html"
         fields:
-          - {label: "Título Hero", name: "hero_title", widget: "string"}
-          - {label: "Descripción Hero", name: "hero_desc", widget: "text"}
-          - {label: "Email de Contacto", name: "contact_email", widget: "string"}
+          - label: "Sección Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Subtítulo", name: "subtitle", widget: "string"}
+              - {label: "Título Principal (Línea 1)", name: "title_line1", widget: "string"}
+              - {label: "Título Principal (Línea 2)", name: "title_line2", widget: "string"}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Texto Botón Principal", name: "btn_primary_text", widget: "string"}
+              - {label: "Texto Botón Secundario", name: "btn_outline_text", widget: "string"}
+
+          - label: "Sección Servicios"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Título Sección", name: "title", widget: "string"}
+              - {label: "Descripción Sección", name: "subtitle", widget: "string"}
+              - label: "Tarjetas de Servicio"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Título", name: "title", widget: "string"}
+                  - {label: "Descripción", name: "description", widget: "text"}
+                  - {label: "Texto Enlace", name: "link_text", widget: "string"}
+
+          - label: "Sección Gastos Médicos (Comparativa)"
+            name: "comparison"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Cita / Hook", name: "lead", widget: "text"}
+              - {label: "Texto explicativo", name: "explanation", widget: "text"}
+              - {label: "Monto del Contador", name: "counter_amount", widget: "string"}
+
+          - label: "Preguntas Frecuentes (FAQ)"
+            name: "faq"
+            widget: "object"
+            fields:
+              - {label: "Título Sección", name: "title", widget: "string"}
+              - label: "Preguntas"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Pregunta", name: "question", widget: "string"}
+                  - {label: "Respuesta", name: "answer", widget: "text"}
+
+          - label: "Sección Contacto y Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Título Contacto", name: "contact_title", widget: "string"}
+              - {label: "Descripción Contacto", name: "contact_desc", widget: "text"}
+              - {label: "Copyright", name: "copyright", widget: "string"}
