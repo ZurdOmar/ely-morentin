@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main # O la rama que estés usando
+
+local_backend: true # Para pruebas locales si usas npx decap-cms-proxy-server
+
+locale: 'es'
+
+media_folder: "assets" # Donde se guardarán las imágenes
+public_folder: "assets"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "home"
+        label: "Página de Inicio"
+        file: "index.html"
+        format: "html" # Decap puede intentar parsear HTML simple si se configura bien,
+                       # pero lo ideal es usar datos JSON. 
+                       # Por ahora, configuraremos campos básicos para referencia.
+        fields:
+          - {label: "Título Hero", name: "hero_title", widget: "string"}
+          - {label: "Descripción Hero", name: "hero_desc", widget: "text"}
+          - {label: "Email de Contacto", name: "contact_email", widget: "string"}
