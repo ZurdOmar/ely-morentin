@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load Dynamic Content
     async function loadContent() {
         try {
-            const response = await fetch('./data/content.json');
+            // Cache buster to ensure the latest data is always fetched
+            const response = await fetch(`./data/content.json?t=${new Date().getTime()}`);
             const data = await response.json();
 
             // Hero
