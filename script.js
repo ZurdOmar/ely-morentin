@@ -76,6 +76,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('cms-footer-copyright').textContent = data.footer.copyright;
             }
 
+            // Calendly Initialization
+            if (data.hero && data.hero.calendly_url && window.Calendly) {
+                // Clear existing widget if any
+                const widgetContainer = document.getElementById('calendly-widget');
+                if (widgetContainer) {
+                    widgetContainer.innerHTML = '';
+                    Calendly.initInlineWidget({
+                        url: `${data.hero.calendly_url}?locale=es`,
+                        parentElement: widgetContainer,
+                        prefill: {},
+                        utm: {},
+                        text_color: '#0B3D33',
+                        primary_color: '#C5A065',
+                        locale: 'es',
+                        embed_locale: 'es'
+                    });
+                }
+            }
+
         } catch (error) {
             console.error('Error loading content:', error);
         }

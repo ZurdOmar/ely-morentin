@@ -28,6 +28,7 @@ collections:
               - {label: "Descripción", name: "description", widget: "text"}
               - {label: "Texto Botón Principal", name: "btn_primary_text", widget: "string"}
               - {label: "Texto Botón Secundario", name: "btn_outline_text", widget: "string"}
+              - {label: "Enlace de Calendly", name: "calendly_url", widget: "string", hint: "Ejemplo: https://calendly.com/tu-usuario/30min"}
 
           - label: "Sección Servicios"
             name: "services"
